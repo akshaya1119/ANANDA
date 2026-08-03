@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using VKSU_ADMIN_API.Models;
+using ANANDA_API.Models;
 
-namespace VKSU_ADMIN_API.Data
+namespace ANANDA_API.Data
 {
     public class AppDbContext : DbContext   // ✅ MUST inherit
     {

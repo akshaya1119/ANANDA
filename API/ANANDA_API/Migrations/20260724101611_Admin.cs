@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace VKSU_ADMIN_API.Migrations
+namespace ANANDA_API.Migrations
 {
     /// <inheritdoc />
     public partial class Admin : Migration

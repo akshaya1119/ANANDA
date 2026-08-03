@@ -1,0 +1,6 @@
+@ANANDA_API_HostAddress = http://localhost:5131
+
+GET {{ANANDA_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

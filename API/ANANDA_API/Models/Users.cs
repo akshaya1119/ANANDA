@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace VKSU_ADMIN_API.Models
+namespace ANANDA_API.Models
 {
     public class Users
     {

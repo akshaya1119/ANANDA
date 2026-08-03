@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace VKSU_ADMIN_API.Controllers
+namespace ANANDA_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

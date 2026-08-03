@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
-using VKSU_ADMIN_API.Data;
-using VKSU_ADMIN_API.Models;
-//using VKSU_ADMIN_API.Services;
+using ANANDA_API.Data;
+using ANANDA_API.Models;
+//using ANANDA_API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -79,7 +79,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseMiddleware<VKSU_ADMIN_API.Middlewares.ExceptionHandlingMiddleware>();
+//app.UseMiddleware<ANANDA_API.Middlewares.ExceptionHandlingMiddleware>();
 
 // ✅ Enable CORS FIRST before HttpsRedirection (crucial for preflight OPTIONS requests)
 

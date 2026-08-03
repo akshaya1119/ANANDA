@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using VKSU_ADMIN_API.Data;
+using ANANDA_API.Data;
 
 #nullable disable
 
-namespace VKSU_ADMIN_API.Migrations
+namespace ANANDA_API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace VKSU_ADMIN_API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("VKSU_ADMIN_API.Models.Payment", b =>
+            modelBuilder.Entity("ANANDA_API.Models.Payment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -74,7 +74,7 @@ namespace VKSU_ADMIN_API.Migrations
                     b.ToTable("Payments");
                 });
 
-            modelBuilder.Entity("VKSU_ADMIN_API.Models.Students", b =>
+            modelBuilder.Entity("ANANDA_API.Models.Students", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -183,7 +183,7 @@ namespace VKSU_ADMIN_API.Migrations
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("VKSU_ADMIN_API.Models.Users", b =>
+            modelBuilder.Entity("ANANDA_API.Models.Users", b =>
                 {
                     b.Property<string>("UserId")
                         .ValueGeneratedOnAdd()

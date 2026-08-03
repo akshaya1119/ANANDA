@@ -1,4 +1,4 @@
-namespace VKSU_ADMIN_API
+namespace ANANDA_API
 {
     public class WeatherForecast
     {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+import Login from './pages/Auth/Login';
+import Dashboard from './pages/Dashboard/Dashboard';
 import { secureStorage } from './utils/secureStorage';
 import './App.css';
 
