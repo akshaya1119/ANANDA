@@ -1,0 +1,6 @@
+@VKSU_ADMIN_API_HostAddress = http://localhost:5131
+
+GET {{VKSU_ADMIN_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

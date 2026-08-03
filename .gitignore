@@ -1,0 +1,32 @@
+# Build folders
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio temporary files (e.g. locks blocking git add)
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Environment configuration
+.env
+.env.*
+env/
+[Ee]nv/
+
+# Node.js dependencies & builds
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs & temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SSMS Scripts
+Users_SSMS_Script.sql
+AdminLogs_SSMS_Script.sql
