@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, Lock, User, ShieldAlert, CheckCircle } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'https://anandaexams.com/NEPVIExitAdminAPI/api';
 
@@ -10,6 +12,9 @@ export default function Login({ onLoginSuccess }) {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [focusedField, setFocusedField] = useState(null);
+
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,8 +49,12 @@ export default function Login({ onLoginSuccess }) {
         throw new Error(data.Message || 'Failed to sign in.');
       }
 
-      // Success
-      onLoginSuccess(data.Token, data.User);
+      // Success - save session in AuthContext & navigate to dashboard
+      login(data.Token, data.User);
+      if (onLoginSuccess) {
+        onLoginSuccess(data.Token, data.User);
+      }
+      navigate('/dashboard', { replace: true });
     } catch (err) {
       setError(err.message || 'Connection to authentication server failed.');
     } finally {

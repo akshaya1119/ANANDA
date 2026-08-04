@@ -3,7 +3,6 @@ import {
   Search, Sliders, FileSpreadsheet, Edit3, ArrowUpDown, ArrowUp, ArrowDown, X,
   ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight
 } from 'lucide-react';
-import StudentProfileModal from './StudentProfileModal';
 
 // Helper component to locally highlight search term matches
 const HighlightText = ({ text, highlight }) => {

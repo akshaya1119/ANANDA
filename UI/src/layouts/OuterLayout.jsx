@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-const OuterLayout = () => {
+export default function OuterLayout() {
   return (
-    <div>OuterLayout</div>
-  )
+    <div className="min-h-screen w-full bg-slate-950">
+      <Outlet />
+    </div>
+  );
 }
-
-export default OuterLayout
