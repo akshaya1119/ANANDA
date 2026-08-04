@@ -1,6 +1,6 @@
 import React from 'react';
 import { User, Shield, Key, LogOut, CheckCircle2 } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 
 export default function Profile() {
   const { user, jwtDecoded, loginTime, logout } = useAuth();

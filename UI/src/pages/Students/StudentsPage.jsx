@@ -1,6 +1,6 @@
 import React from 'react';
-import Students from '../../components/Students';
-import { useAuth } from '../../context/AuthContext';
+import Students from '@/components/Students';
+import { useAuth } from '@/context/AuthContext';
 
 export default function StudentsPage() {
   const { token, user, logout } = useAuth();

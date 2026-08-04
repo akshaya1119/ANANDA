@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, Lock, User, ShieldAlert, CheckCircle } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'https://anandaexams.com/NEPVIExitAdminAPI/api';
 

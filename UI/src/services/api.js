@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { secureStorage } from '../utils/secureStorage';
+import { secureStorage } from '@/utils/secureStorage';
 
 // Read API Base URL from env variable (fallback to http://localhost:5131/api)
 let rawUrl = import.meta.env.VITE_API_URL ;

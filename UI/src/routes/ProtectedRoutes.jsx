@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
-import InnerLayout from '../layouts/InnerLayout/InnerLayout';
+import { useAuth } from '@/context/AuthContext';
+import InnerLayout from '@/layouts/InnerLayout/InnerLayout';
 
 export default function ProtectedRoutes() {
   const { isAuthenticated } = useAuth();

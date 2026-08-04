@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Menu, Clock } from 'lucide-react';
-import Sidebar from './components/Sidebar';
-import { useAuth } from '../../context/AuthContext';
-import SesssionExpiry from '../../components/SesssionExpiry';
+import Sidebar from '@/layouts/InnerLayout/components/Sidebar';
+import { useAuth } from '@/context/AuthContext';
+import SesssionExpiry from '@/components/SesssionExpiry';
 
 export default function InnerLayout() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);

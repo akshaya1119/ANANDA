@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
-import OuterLayout from '../layouts/OuterLayout';
+import { useAuth } from '@/context/AuthContext';
+import OuterLayout from '@/layouts/OuterLayout';
 
 export default function GuestRoutes() {
   const { isAuthenticated } = useAuth();

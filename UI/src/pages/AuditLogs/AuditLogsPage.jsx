@@ -1,6 +1,6 @@
 import React from 'react';
-import AuditLogs from './AuditLogs';
-import { useAuth } from '../../context/AuthContext';
+import AuditLogs from '@/pages/AuditLogs/AuditLogs';
+import { useAuth } from '@/context/AuthContext';
 
 export default function AuditLogsPage() {
   const { token, user, logout } = useAuth();

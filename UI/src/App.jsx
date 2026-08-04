@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
-import GuestRoutes from './routes/GuestRoutes';
-import ProtectedRoutes from './routes/ProtectedRoutes';
-import Login from './pages/Auth/Login';
-import Dashboard from './pages/Dashboard/Dashboard';
-import StudentsPage from './pages/Students/StudentsPage';
-import AuditLogsPage from './pages/AuditLogs/AuditLogsPage';
-import Profile from './pages/Profile/Profile';
-import Settings from './pages/Settings/Settings';
-import './App.css';
+import { AuthProvider } from '@/context/AuthContext';
+import GuestRoutes from '@/routes/GuestRoutes';
+import ProtectedRoutes from '@/routes/ProtectedRoutes';
+import Login from '@/pages/Auth/Login';
+import Dashboard from '@/pages/Dashboard/Dashboard';
+import StudentsPage from '@/pages/Students/StudentsPage';
+import AuditLogsPage from '@/pages/AuditLogs/AuditLogsPage';
+import Profile from '@/pages/Profile/Profile';
+import Settings from '@/pages/Settings/Settings';
+import '@/App.css';
 
 function App() {
   return (
