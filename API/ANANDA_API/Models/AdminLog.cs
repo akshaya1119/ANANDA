@@ -33,8 +33,7 @@ namespace ANANDA_API.Models
 
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        [ForeignKey("StudentId")]
-        public virtual Students? Student { get; set; }
+      
 
         [ForeignKey("AdminUserId")]
         public virtual Users? AdminUser { get; set; }

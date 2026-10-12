@@ -12,8 +12,6 @@ namespace ANANDA_API.Data
         }
 
         // ✅ Tables
-        public DbSet<Students> Students { get; set; }
-        public DbSet<Payment> Payments { get; set; }
         public DbSet<Users> Users { get; set; }
         public DbSet<AdminLog> AdminLogs { get; set; }
 
